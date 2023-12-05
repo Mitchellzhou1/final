@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internet Addiction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.8.0/dist/index.umd.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Quiz">Quiz</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" style="padding-top: 60px;" class="hero">
+      <h1 style="line-height: 1;">Internet <br> Addiction</h1>
+      <h2 id="subtitle"></h2>
+    </section>
+    <p id="simpleUsage" style="line-height: 1.4;"></p>
+  </main>
+  <div id="hero"></div>
+
+  <script>
+    const typeItSubtitle = new TypeIt("#subtitle", {
+      speed: 80,
+      startDelay: 900
+    });
+
+    // Define the typing sequence
+    typeItSubtitle
+      .type("Understanding the Digital Dependency", { delay: 200 })
+      .move(-23, { delay: 500 })
+      .delete(20, { speed: 1000 } ) // Delete "Digital "
+      .type('<em><strong class="font-semibold">Overcoming </strong></em>', { speed: 100, })
+      .move(null, { to: "END" })
+      .go();
+  </script>
+  <main>
+    <section id="home" class="text-section">
+
+    </section>
+  </main>
+
+
+</body>
+</html>
