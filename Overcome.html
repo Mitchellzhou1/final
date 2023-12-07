@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
 
-  <style>
+
 </style>
 
 
@@ -24,7 +25,7 @@
     <nav>
         <a href="index.html">About</a>
         <a href="#">Overcome it</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
@@ -50,6 +51,91 @@
       .move(null, { to: "END" })
       .go();
   </script>
+
+<section class="text-section" style="height: 75vh;">
+    <p style="padding-bottom: 10px; font-weight: bold;"> TEST </p>
+    <h1 style="margin-bottom: 10px;">Internet Addiction</h1>
+    <p style="padding-bottom: 100px;">
+        Take this short survey to see if you are affected by Internet Addiction.
+        <iframe id='test' src="/testing.html" style="width: 100%; height: 60vh; border: none; overflow: auto;" scrolling="no"></iframe>
+</section>
+
+<script>
+    var myIframe = document.getElementById('test');
+    myIframe.onload = function () {
+        myIframe.contentWindow.scrollTo(0, 1320); // Replace with the coordinates you want to scroll to
+    }
+</script>
+
+<section class="text-section" style="height: 100vh;">
+    <h1 style="margin-bottom: 10px;">See What Others Are going Through...</h1>
+
+ <div class="chat-room">
+    <div class="chat-area" id="chatArea">
+      <!-- Prepopulated chat entries -->
+      <div class="message">
+        <img src="images/overcome/Jimmy Shong.jpg" alt="Profile" class="profile-icon">
+        <div class="message-content">
+          <div class="message-header">
+            <span class="sender-name">Alice Jordan</span>
+          </div>
+          <div class="message-header">
+            <span class="time">11:39 PM</span>
+          </div>
+            <myp>Man, being glued to video games took me to some dark places.
+            It started as harmless fun, you know? But then, it turned into this
+            black hole I couldn’t escape. I'd spend days locked away, lost in virtual
+            worlds while reality slipped by. Friends faded away, and the only victories
+            I knew were digital. It was this suffocating cycle—playing to escape, but feeling
+            more trapped each day. There were moments when I felt utterly alone, surrounded
+            by screens but completely isolated. It took hitting rock bottom to realize I
+            needed to step back, find joy in the real world, and rebuild what I'd lost to the
+            pixels. It was a tough journey, but slowly, I found my way back, finding balance and
+            reconnecting with the world beyond the games.</myp>
+        </div>
+      </div>
+
+    </div>
+    <div class="input-area">
+      <input type="text" id="messageInput" style="width: 93%" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var messageInput = document.getElementById('messageInput');
+      var message = messageInput.value;
+
+      if (message.trim() !== '') {
+        var chatArea = document.getElementById('chatArea');
+
+        var now = new Date();
+        var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        chatArea.innerHTML += `
+          <div class="message">
+            <img src="images/overcome/profile.jpg" alt="Profile" class="profile-icon">
+            <div class="message-content">
+              <div class="message-header">
+                <span class="sender-name">Guest</span>
+              </div>
+              <div class="message-header">
+                <span class="time">${time}</span>
+              </div>
+              <myp>${message}</myp>
+            </div>
+          </div>
+        `;
+        messageInput.value = '';
+        chatArea.scrollTop = chatArea.scrollHeight;
+      }
+    }
+  </script>
+
+
+
+</section>
 
 
 
