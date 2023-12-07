@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internet Addiction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.8.0/dist/index.umd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+</style>
+
+
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="#">Overcome it</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section style="background: url(images/overcome/intro.gif) center center / 70% 100%; height: 100vh;" class="hero">
+      <h1 style="line-height: 1; color: black;">Internet <br> Addiction</h1>
+      <h2 id="subtitle" style="color: black;"></h2>
+    </section>
+    <p id="simpleUsage" style="line-height: 1.4;"></p>
+  </main>
+  <div id="hero" ></div>
+<script>
+    const typeItSubtitle = new TypeIt("#subtitle", {
+      speed: 80,
+      startDelay: 900
+    });
+
+    // Define the typing sequence
+    typeItSubtitle
+      .type("Understanding the Digital Dependency", { delay: 200 })
+      .move(-23, { delay: 500 })
+      .delete(20, { speed: 1000 } ) // Delete "Digital "
+      .type('<em><strong class="font-semibold">Overcoming </strong></em>', { speed: 100, })
+      .move(null, { to: "END" })
+      .go();
+  </script>
+
+
+
+</body>
+</html>

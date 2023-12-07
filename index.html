@@ -4,20 +4,93 @@
   <meta charset="UTF-8">
   <title>Internet Addiction</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typeit@8.8.0/dist/index.umd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+  iframe {
+    float: right;
+    margin: 30px 30px 30px 30px;
+  }
+.card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 300px;
+            max-width: 100%;
+            background-color: #fff;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+        .card-header {
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #000;
+            background-color: #333;
+            height: 300px;
+
+        }
+
+        .card-content {
+            padding: 20px;
+            color: #333;
+        }
+
+        .card-footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .secondary {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .fg-gray {
+            color: #666;
+        }
+
+
+</style>
+
 
 </head>
 <body>
   <header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#Quiz">Quiz</a>
+        <a href="#">About</a>
+        <a href="Overcome.html">Overcome it</a>
         <a href="#contact">Contact</a>
     </nav>
   </header>
   <main>
-    <section id="home" style="padding-top: 60px;" class="hero">
+    <section style="padding-top: 60px;" class="hero">
       <h1 style="line-height: 1;">Internet <br> Addiction</h1>
       <h2 id="subtitle"></h2>
     </section>
@@ -40,11 +113,309 @@
       .move(null, { to: "END" })
       .go();
   </script>
-  <main>
-    <section id="home" class="text-section">
+
+  <section class="text-section" style="height: 90%;">
+    <p style="padding-bottom: 10px; font-weight: bold;"> ARTICLE </p>
+    <h1 style="margin-bottom: 10px;">Internet Addiction</h1>
+
+      <p style="padding-bottom: 100px;"><iframe width="560" height="405" src="https://www.youtube.com/embed/ZTlMZiJoT8g?si=IoxzpUJKdwFCLpJ8" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+Internet addiction disorder or IAD is a broad term that describes an impulse control disorder characterized by
+        spending excessive amounts of time on  the internet in chat rooms, on dating sites, scrolling through social media,
+        playing online games, watching YouTube videos, etc. Also called Problematic Internet Use (PIU), internet addiction
+        is characterized by hard to control, excessive use of, preoccupation with, or difficult to withstand urges to use
+        one's computer, smartphone, and internet.
+        It is also characterized by the experience of withdrawal symptoms when
+        the user loses access to online activities. The behavior continues despite impairment and negative consequences.
+        Problematic use of the internet comes in many forms, from excessive internet gaming to computer use that facilitates
+        pathological gambling. Regardless of what addictive behavior is being sought out and performed online—shopping, gambling,
+        gaming, etc.—all internet addictions involve excessive internet use that interferes with a person's well-being. <br> <br>
+        There are currently many debates in psychiatry about internet addiction disorder and what addictive behaviors
+        constitute actual addiction. That being said, gaming disorder (i.e. online gaming addiction or video game addiction)
+        was included in the fifth edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) as an addictive
+        diagnosis. Behavioral addictions like IAD share many similarities with substance use disorders, because they can impact
+        dopamine levels and other hormones. Excessive and problematic internet usage can also negatively impact one's family life,
+        work responsibilities, and health just as alcohol abuse and other substance abuse disorders can.</p>
+  <h1>Common Types of Internet Addiction</h1>
+  <div class="slider" style="margin-top: 30px;">
+      <div>
+        <img src="images/index/socialmedia.jpg" alt="">
+        <div class="slide-description">
+          <h3>Social Media Addiction</h3>
+          <p>Social media addiction refers to excessive and
+            compulsive use of social networking platforms,
+            leading to negative impacts on various aspects
+            of an individual's life. It involves a compulsive
+            need to constantly check, engage, or seek validation
+            through social media channels, often at the expense of
+            real-life interactions, responsibilities, and mental
+            well-being.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="images/index/videogames.jpg" alt="">
+        <div class="slide-description">
+          <h3>Video Game Addiction</h3>
+          <p>Video game addiction, also known as gaming disorder or
+            internet gaming disorder, refers to a pattern of excessive
+            and compulsive gaming behavior that leads to significant
+            distress or impairment in various areas of an individual's
+            life. It's characterized by an uncontrollable urge to play
+            video games, leading to neglect of other important activities
+            and responsibilities.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="images/index/pornaddiction.jpg" alt="">
+        <div class="slide-description">
+          <h3>Pornography Addiction</h3>
+          <p>Pornography addiction, also known as compulsive sexual behavior
+            disorder or problematic pornography use, refers to an individual's
+            inability to control their consumption of pornographic material,
+            leading to negative consequences in various areas of life. It involves
+            a persistent pattern of seeking, viewing, or engaging with pornography
+            despite adverse effects on personal, social, or psychological well-being.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="images/index/contentaddiction.png" alt="">
+        <div class="slide-description">
+          <h3>Video Streaming Addiction</h3>
+          <p>Video streaming addiction, also referred to as binge-watching addiction or
+            compulsive streaming behavior, is a pattern of excessive and compulsive
+            consumption of video content through streaming services. It involves prolonged
+            and uncontrollable viewing of TV series, movies, or other digital content through
+            platforms like Netflix, Hulu, Amazon Prime Video, and others.
+          </p>
+        </div>
+      </div>
+      <div>
+          <img src="images/index/onlinegambling.jpg" alt="">
+          <div class="slide-description">
+            <h3>Online Gambling Addiction</h3>
+            <p>Online gambling addiction, also known as internet gambling disorder, is a problematic
+              and compulsive engagement in various forms of gambling activities facilitated by online
+              platforms. This addiction is characterized by an individual's inability to control their
+              gambling behaviors, resulting in significant negative consequences.
+            </p>
+          </div>
+        </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+      $(document).ready(function () {
+              $(".slider").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 800,
+                autoplaySpeed: 4000,
+                infinite: true,
+                autoplay: true,
+                centerMode: true
+              });
+            });
+      </script>
+  </section>
+
+    <section class="text-section" style="margin-top: 100px; height: 30%;">
+      <h1>Internet Addiction Symptoms</h1>
+        <p>Internet addiction manifests through various symptoms, impacting an individual's physical,
+          psychological, and social well-being. Excessive time spent online often leads to physical
+          manifestations such as eyestrain, headaches, and disrupted sleep patterns. Psychologically,
+          individuals may exhibit signs of irritability, anxiety, or depression when unable to access the
+          internet. Socially, addiction to online activities can result in neglecting real-life relationships,
+          withdrawal from social interactions, and decreased performance at work or school. These symptoms
+          collectively signify the adverse effects of compulsive internet usage, highlighting the need for
+          moderation and mindful online habits.<br><br><br>
+        </p>
+        <div class="swiper-container" style="margin-left: 15%;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/index/eyestrain.jpg" alt="Eyestrain">
+              <div class="slide-text">Excessive time spent online can lead to eyestrain</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/index/socialwithdrawal.jpg" alt="Social Withdrawal">
+              <div class="slide-text">Social withdrawal</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/index/sadperson.jpg" alt="Neglecting Real-Life Relationships">
+              <div class="slide-text">Neglecting real-life relationships</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/index/badgrades.jpg" alt="Impact on Work/School Performance">
+              <div class="slide-text">Impact on work/school performance</div>
+            </div>
+            <!-- Add more slides representing symptoms -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper('.swiper-container', {
+      effect: 'cube', // Change the effect to 'cube'
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      });
+  </script>
 
     </section>
-  </main>
+
+
+
+    <section class="text-section" style="margin-top: 100px; height: 30%;">
+      <h1>Internet Usage Today</h1>
+        <p>The internet of course, has undergone significant evolution,
+          becoming an integral part of modern life. Its growth and
+          accessibility have led to numerous positive advancements in
+          communication, education, commerce, and entertainment. Every year, around 390 million
+          more people are connected to the internet. As the internet becomes
+          more and more integrated into our lives, it is important that we watch our screen time
+          and taking breaks.
+        </p>
+    </section>
+  <div id="chartContainer">
+    <canvas id="myChart" width="800" height="600"></canvas>
+  </div>
+
+  <script>
+    const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020];
+    const internetUsers = [1981, 2174, 2387, 2562, 2750, 2954, 3217, 3444, 3729, 4119, 4585, 4901, 5300];
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: 'Internet Users (in millions)',
+            data: internetUsers,
+            borderColor: 'blue',
+            borderWidth: 2,
+            fill: true,
+            font: {
+                size: 100
+            }
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Years',
+              color: 'black',
+              font: {
+                size: 20
+              }
+            },
+            ticks: {
+              color: 'black'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Internet Users (in millions)',
+              color: 'black',
+              font: {
+                size: 20
+              }
+            },
+            ticks: {
+              stepSize: 500,
+              color: 'black'
+            }
+          }
+        },
+        plugins: {
+          title: {
+            display: true,
+            text: 'Internet Users Over Years',
+            color: 'black',
+            font: {
+                size: 20
+              }
+          }
+        }
+      }
+    });
+  </script>
+<section class="text-section" style="margin-top: 50px; height: 30%; display: flex; justify-content: space-between; flex-direction: row;">
+    <div class="card image-header">
+        <div class="card-header fg-white"
+             style="background-image: url(images/index/screentime.png)">
+        </div>
+        <div class="card-content p-2" style="background: black; color: white; text-align: center;">
+            Globally Screen Time
+        </div>
+        <div class="card-content p-2">
+            Globally, people average 6 hours and 58 minutes of screen time per day.
+        </div>
+    </div>
+
+    <div class="card image-header">
+        <div class="card-header fg-white"
+             style="background-image: url(images/index/screentime.jpg)">
+        </div>
+        <div class="card-content p-2" style="background: black; color: white; text-align: center;">
+            Increasing Screen Time
+        </div>
+        <div class="card-content p-2">
+            Daily screen time has increased by nearly 50 minutes per day since 2013.
+        </div>
+    </div>
+
+    <div class="card image-header">
+        <div class="card-header fg-white"
+             style="background-image: url(images/index/babiesphone.jpg)">
+        </div>
+        <div class="card-content p-2" style="background: black; color: white; text-align: center;">
+            Even Babies use it
+        </div>
+        <div class="card-content p-2">
+            Almost half (49%) of 0 to 2-year-olds interact with smartphones.
+        </div>
+    </div>
+
+    <div class="card image-header">
+        <div class="card-header fg-white"
+             style="background-image: url(images/index/genZ.jpg)">
+        </div>
+        <div class="card-content p-2" style="background: black; color: white; text-align: center;">
+            Gen Z
+        </div>
+        <div class="card-content p-2">
+            Gen Z averages around 9 hours of screen time per day.
+        </div>
+    </div>
+
+
+</section>
+
+
 
 
 </body>

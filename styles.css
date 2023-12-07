@@ -1,4 +1,3 @@
-/* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
@@ -53,23 +52,42 @@ main {
   padding-top: 0px;
 }
 
+#chartContainer {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+}
 
 .text-section {
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding-bottom: 50px;
   position: relative;
+  flex-direction: column;
+  margin-top: 8%;
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+
+.text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin-top: 3%;
 }
 
 
 
 .hero {
-  background-image: url('/images/Home.gif');
+  background-image: url('images/index/Home.gif');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -97,4 +115,72 @@ main {
   top: 75%;
   left: 6%;
   text-align: left;
+}
+
+.slider img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+
+.slick-slide {
+	transform: scale(0.6);
+	transition: all 1s ease-in-out;
+	padding: 40px 0;
+}
+
+
+.slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.slick-center {
+	transform: scale(1.15);
+}
+
+.slide-description {
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.slide-description p {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+.swiper-container {
+  width: 70%;
+  height: 400px;
+ }
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.slide-text {
+  font-size: 18px;
+  color: #fff;
 }
