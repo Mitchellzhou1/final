@@ -207,7 +207,7 @@ object-fit: cover;
 }
 
 .chat-area {
-  height: 50vh;
+  height: 70vh;
   overflow-y: auto;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
