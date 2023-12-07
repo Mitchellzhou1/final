@@ -18,9 +18,9 @@ header {
   height: 10%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
